@@ -1,0 +1,12 @@
+/*
+Theme Name: AryaOdyssey Travel Theme
+Description: A modern WordPress theme for travel and hospitality business with React-powered Gutenberg blocks
+Version: 1.0.0
+Author: AryaOdyssey
+Text Domain: aryaodyssey
+*/
+
+/* This file is loaded by WordPress to identify the theme */
+/* Main styles are in assets/css/main.css */
+
+@import url('assets/css/main.css');

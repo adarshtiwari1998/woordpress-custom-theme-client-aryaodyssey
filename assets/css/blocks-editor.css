@@ -1,0 +1,275 @@
+/* Editor styles for AryaOdyssey Gutenberg blocks */
+
+/* Block Category */
+.wp-block-category-aryaodyssey .components-panel__body-title {
+    color: #2d5016;
+    font-weight: 600;
+}
+
+/* Hero Block Editor Styles */
+.aryaodyssey-hero-block {
+    border: 2px dashed #ddd;
+    position: relative;
+}
+
+.aryaodyssey-hero-block:hover {
+    border-color: #2d5016;
+}
+
+.aryaodyssey-hero-block .wp-block-cover__inner-container {
+    width: 100%;
+    z-index: 2;
+}
+
+.aryaodyssey-hero-block h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.aryaodyssey-hero-block p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 2rem;
+}
+
+/* Services Block Editor Styles */
+.aryaodyssey-services-block {
+    border: 1px solid #e9ecef;
+    border-radius: 10px;
+    padding: 30px;
+    background: #f8f9fa;
+}
+
+.aryaodyssey-services-block h2 {
+    color: #333;
+    font-family: 'Playfair Display', serif;
+}
+
+.aryaodyssey-services-block .service-preview {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.aryaodyssey-services-block .service-preview:hover {
+    transform: translateY(-5px);
+}
+
+.aryaodyssey-services-block .service-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+/* CTA Block Editor Styles */
+.aryaodyssey-cta-block {
+    border: 2px solid #e9ecef;
+    position: relative;
+}
+
+.aryaodyssey-cta-block:hover {
+    border-color: #2d5016;
+}
+
+.aryaodyssey-cta-block h2 {
+    font-family: 'Playfair Display', serif;
+    color: #333;
+}
+
+.aryaodyssey-cta-block .button-preview {
+    margin: 0 10px;
+    transition: all 0.3s ease;
+}
+
+.aryaodyssey-cta-block .button-preview:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Rooms Block Editor Styles */
+.aryaodyssey-rooms-block {
+    border: 1px solid #e9ecef;
+    border-radius: 15px;
+    padding: 30px;
+    background: white;
+}
+
+.aryaodyssey-rooms-block .room-preview {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.aryaodyssey-rooms-block .room-meta {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.aryaodyssey-rooms-block .room-price {
+    color: #2d5016;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/* Features Block Editor Styles */
+.aryaodyssey-features-block {
+    border: 1px solid #e9ecef;
+    border-radius: 10px;
+    padding: 30px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.aryaodyssey-features-block .feature-item {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.aryaodyssey-features-block .feature-icon {
+    width: 50px;
+    height: 50px;
+    background: #2d5016;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* Testimonials Block Editor Styles */
+.aryaodyssey-testimonials-block {
+    border: 1px solid #e9ecef;
+    border-radius: 15px;
+    padding: 30px;
+    background: white;
+}
+
+.aryaodyssey-testimonials-block .testimonial-preview {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border-left: 4px solid #2d5016;
+}
+
+.aryaodyssey-testimonials-block .testimonial-author {
+    font-weight: 600;
+    color: #333;
+    margin-top: 15px;
+}
+
+.aryaodyssey-testimonials-block .testimonial-rating {
+    color: #ffc107;
+    margin-top: 10px;
+}
+
+/* Block Editor Spacing */
+.wp-block[data-type="aryaodyssey/hero-block"],
+.wp-block[data-type="aryaodyssey/services-block"],
+.wp-block[data-type="aryaodyssey/cta-block"],
+.wp-block[data-type="aryaodyssey/rooms-block"],
+.wp-block[data-type="aryaodyssey/features-block"],
+.wp-block[data-type="aryaodyssey/testimonials-block"] {
+    margin: 2rem 0;
+}
+
+/* Inspector Controls Styling */
+.components-panel__body-aryaodyssey .components-base-control__label {
+    color: #2d5016;
+    font-weight: 500;
+}
+
+.components-panel__body-aryaodyssey .components-button.is-primary {
+    background-color: #2d5016;
+    border-color: #2d5016;
+}
+
+.components-panel__body-aryaodyssey .components-button.is-primary:hover {
+    background-color: #4a7c59;
+    border-color: #4a7c59;
+}
+
+/* Block Toolbar */
+.block-editor-block-toolbar .components-toolbar-group {
+    border-color: #e9ecef;
+}
+
+.block-editor-block-toolbar .components-button.is-pressed {
+    background-color: #2d5016;
+    color: white;
+}
+
+/* Block Appender */
+.wp-block[data-type^="aryaodyssey/"] .block-list-appender {
+    margin: 20px 0;
+}
+
+/* Rich Text Placeholders */
+.aryaodyssey-hero-block .wp-block-paragraph.is-selected,
+.aryaodyssey-services-block .wp-block-paragraph.is-selected,
+.aryaodyssey-cta-block .wp-block-paragraph.is-selected {
+    border-color: #2d5016;
+}
+
+/* Block Validation */
+.block-editor-warning {
+    border-left-color: #2d5016;
+}
+
+.block-editor-warning .block-editor-warning__message {
+    color: #333;
+}
+
+/* Responsive Editor Styles */
+@media (max-width: 768px) {
+    .aryaodyssey-hero-block h1 {
+        font-size: 2rem;
+    }
+    
+    .aryaodyssey-hero-block p {
+        font-size: 1rem;
+    }
+    
+    .aryaodyssey-services-block,
+    .aryaodyssey-cta-block,
+    .aryaodyssey-rooms-block,
+    .aryaodyssey-features-block,
+    .aryaodyssey-testimonials-block {
+        padding: 20px;
+    }
+}
+
+/* Color Palette Override */
+.components-color-palette__item {
+    border-radius: 4px;
+}
+
+.components-color-palette__item[aria-label*="AryaOdyssey"] {
+    border: 2px solid #2d5016;
+}
+
+/* Custom Block Icons */
+.block-editor-block-types-list__item[data-id*="aryaodyssey"] .block-editor-block-types-list__item-icon {
+    color: #2d5016;
+}
+
+/* Block Patterns */
+.block-editor-block-patterns-list__item.aryaodyssey-pattern {
+    border: 2px solid #2d5016;
+}
+
+.block-editor-block-patterns-list__item.aryaodyssey-pattern:hover {
+    box-shadow: 0 5px 15px rgba(45, 80, 22, 0.3);
+}
