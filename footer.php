@@ -1,74 +1,75 @@
+<?php
+/**
+ * The template for displaying the footer
+ */
+?>
     </div><!-- #content -->
 
-    <footer id="colophon" class="site-footer">
-        <div class="footer-container">
-            <?php if (is_active_sidebar('footer-widgets')) : ?>
-                <div class="footer-widgets">
-                    <?php dynamic_sidebar('footer-widgets'); ?>
-                </div>
-            <?php endif; ?>
-
-            <div class="footer-main">
-                <div class="footer-section">
-                    <h4><?php esc_html_e('Contact Info', 'aryaodyssey'); ?></h4>
-                    <div class="contact-info">
-                        <p><i data-feather="map-pin"></i> <?php echo get_theme_mod('contact_address', 'Your Address Here'); ?></p>
-                        <p><i data-feather="phone"></i> <?php echo get_theme_mod('contact_phone', '+1 234 567 8900'); ?></p>
-                        <p><i data-feather="mail"></i> <?php echo get_theme_mod('contact_email', 'info@aryaodyssey.com'); ?></p>
+    <footer id="colophon" class="site-footer bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="text-success mb-3">AryaOdyssey</h5>
+                    <p>Experience the magic of Manali and the Himalayas with our premium travel services. From luxury accommodations to thrilling adventures, we make your journey unforgettable.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-light me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
-
-                <div class="footer-section">
-                    <h4><?php esc_html_e('Quick Links', 'aryaodyssey'); ?></h4>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="text-success mb-3">Quick Links</h6>
                     <?php
                     wp_nav_menu(array(
                         'theme_location' => 'footer',
-                        'menu_class'     => 'footer-menu',
-                        'container'      => false,
-                        'depth'          => 1,
+                        'depth' => 1,
+                        'container' => false,
+                        'menu_class' => 'list-unstyled footer-nav',
+                        'fallback_cb' => false,
                     ));
                     ?>
                 </div>
-
-                <div class="footer-section">
-                    <h4><?php esc_html_e('Our Services', 'aryaodyssey'); ?></h4>
-                    <ul class="services-list">
-                        <li><a href="<?php echo esc_url(get_permalink(get_page_by_path('services'))); ?>#guides"><?php esc_html_e('Guides', 'aryaodyssey'); ?></a></li>
-                        <li><a href="<?php echo esc_url(get_permalink(get_page_by_path('services'))); ?>#trekking"><?php esc_html_e('Trekking & Camping', 'aryaodyssey'); ?></a></li>
-                        <li><a href="<?php echo esc_url(get_permalink(get_page_by_path('services'))); ?>#transportation"><?php esc_html_e('Transportation', 'aryaodyssey'); ?></a></li>
-                        <li><a href="<?php echo esc_url(get_permalink(get_page_by_path('rooms'))); ?>"><?php esc_html_e('Accommodation', 'aryaodyssey'); ?></a></li>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="text-success mb-3">Services</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="<?php echo esc_url(home_url('/services')); ?>" class="text-light">Accommodation</a></li>
+                        <li><a href="<?php echo esc_url(home_url('/services')); ?>" class="text-light">Transportation</a></li>
+                        <li><a href="<?php echo esc_url(home_url('/services')); ?>" class="text-light">Trekking & Camping</a></li>
+                        <li><a href="<?php echo esc_url(home_url('/services')); ?>" class="text-light">Tour Guides</a></li>
                     </ul>
                 </div>
-
-                <div class="footer-section">
-                    <h4><?php esc_html_e('Follow Us', 'aryaodyssey'); ?></h4>
-                    <div class="social-links">
-                        <?php if (get_theme_mod('facebook_url')) : ?>
-                            <a href="<?php echo esc_url(get_theme_mod('facebook_url')); ?>" target="_blank" rel="noopener">
-                                <i data-feather="facebook"></i>
-                            </a>
-                        <?php endif; ?>
-                        <?php if (get_theme_mod('instagram_url')) : ?>
-                            <a href="<?php echo esc_url(get_theme_mod('instagram_url')); ?>" target="_blank" rel="noopener">
-                                <i data-feather="instagram"></i>
-                            </a>
-                        <?php endif; ?>
-                        <?php if (get_theme_mod('twitter_url')) : ?>
-                            <a href="<?php echo esc_url(get_theme_mod('twitter_url')); ?>" target="_blank" rel="noopener">
-                                <i data-feather="twitter"></i>
-                            </a>
-                        <?php endif; ?>
-                    </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="text-success mb-3">Contact Info</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <i class="fas fa-map-marker-alt text-success me-2"></i>
+                            Manali, Himachal Pradesh, India
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-phone text-success me-2"></i>
+                            +91 98765 43210
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-envelope text-success me-2"></i>
+                            info@aryaodyssey.com
+                        </li>
+                    </ul>
                 </div>
             </div>
-
-            <div class="footer-bottom">
-                <div class="copyright">
-                    <p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. <?php esc_html_e('All rights reserved.', 'aryaodyssey'); ?></p>
+            
+            <hr class="my-4">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; <?php echo date('Y'); ?> AryaOdyssey. All rights reserved.</p>
                 </div>
-                <div class="footer-links">
-                    <a href="<?php echo esc_url(get_privacy_policy_url()); ?>"><?php esc_html_e('Privacy Policy', 'aryaodyssey'); ?></a>
-                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('terms'))); ?>"><?php esc_html_e('Terms of Service', 'aryaodyssey'); ?></a>
+                <div class="col-md-6 text-md-end">
+                    <a href="<?php echo esc_url(home_url('/privacy-policy')); ?>" class="text-light me-3">Privacy Policy</a>
+                    <a href="<?php echo esc_url(home_url('/terms')); ?>" class="text-light">Terms of Service</a>
                 </div>
             </div>
         </div>
@@ -76,13 +77,5 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
-<script>
-// Initialize Feather icons
-if (typeof feather !== 'undefined') {
-    feather.replace();
-}
-</script>
-
 </body>
 </html>
